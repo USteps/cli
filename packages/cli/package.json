@@ -1,0 +1,27 @@
+{
+    "name": "@usteps/cli",
+    "version": "0.0.1",
+    "description": "CLI tool for usteps",
+    "type": "module",
+    "bin": {
+        "usteps": "./dist/bin.cjs"
+    },
+    "files": [
+        "dist"
+    ],
+    "scripts": {
+        "build": "tsup src/bin.ts --format cjs --clean"
+    },
+    "dependencies": {
+        "@usteps/create": "workspace:*"
+    },
+    "license": "MIT",
+    "author": "yxonic",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/usteps/cli.git"
+    },
+    "publishConfig": {
+        "access": "public"
+    }
+}
